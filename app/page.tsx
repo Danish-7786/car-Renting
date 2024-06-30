@@ -1,6 +1,6 @@
 import {CustomFilter, Hero, SearchBar,CarCard} from '@/components'
 import { fetchCars } from '@/utils';
-
+import { HomeProps } from '@/Types';
 import Image from 'next/image'
 
 export default async function Home({ searchParams }: HomeProps) {
@@ -8,7 +8,7 @@ export default async function Home({ searchParams }: HomeProps) {
     manufacturer: searchParams.manufacturer || '',
     year : searchParams.year || 2022,
     fuel : searchParams.fuel || '',
-    limit: searchParams.Limit || 10,
+    limit: searchParams.limit || 10,
     model : searchParams.model ||'',
    } );
 
