@@ -30,8 +30,7 @@ export default async function Home({ searchParams }: HomeProps) {
         
       </div>
       <div className='flex gap-4 text-gray-500'>
-        <CustomFilter title='fuel'/>
-        <CustomFilter title="year"/>
+       
       </div>
       {!isDataEmpty ?
       <section className='grid gap-4 grid-col-1 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3'>
