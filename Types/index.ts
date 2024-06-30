@@ -7,6 +7,9 @@ export interface CustomButtonProps {
     en?: boolean,
 
 } 
+export interface HomeProps {
+    searchParams: FilterProps;
+  }
 export interface manufacturersprops{
     manufacturer :string,
     setManufacturer : (manufacturer: string) => void;  
